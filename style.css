@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+.nav{
+    background: rgb(234, 233, 233);
+    height: 100%;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    transform: translate(-100%);
+    transition: all 0.8s;
+   
+
+}
+.add{
+    transform: translate(0);
+    transition: all 0.8s;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+h2{
+    letter-spacing: 4px;
+}
+.logo button{
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    transition: .8s;
+    text-align: center;
+    cursor: pointer;
+
+}
+.logo button:hover{
+    color: #49a6e9;
+}
+.links{
+    margin-bottom: 300px;
+}
+
+
+.links ul {
+    
+    line-height: -2;
+    padding-top: 5px;
+}
+.links ul li{
+   display: flex;
+   align-items: center;
+   left: 20px;
+    list-style: none;
+   line-height: 3;
+   transition:  all 0.5s;
+
+
+}
+
+.links ul li:hover{
+    background-color: #49a6e9;
+    transition:  all 0.5s;
+}
+.links ul li a{
+    text-decoration: none;
+    color: hsl(209, 34%, 30%);
+    
+    padding-left: 20px;
+    font-size: 23px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul{
+    display: flex;
+    justify-self: center;
+
+}
+.social-media ul li {
+    margin: 0 8px 0 8px;
+    list-style: none;
+
+}
+
+.social-media ul li a{
+    color:#49a6e9;
+    font-size: 25px;
+    transition: all .4s;
+
+}
+.social-media ul li a:hover{
+    color: #1e445f;
+    transition: all .4s;
+}
+.toggel-btn{
+    position: fixed;
+    top: 1rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    
+    
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+    color: #49a6e9;
+}
+@keyframes bounce{
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(1);
+}
+}
